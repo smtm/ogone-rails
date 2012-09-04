@@ -32,7 +32,9 @@ Gem::Specification.new do |s|
     "lib/ogone-rails/string-to-hash.rb",
     "ogone-rails.gemspec",
     "test/helper.rb",
-    "test/test_ogone-rails.rb"
+    "test/test_ogone-rails.rb",
+    "config/locales/de.yml",
+    "config/locales/en.yml"
   ]
   s.homepage = "http://github.com/robinhoudmeyers/ogone-rails"
   s.licenses = ["MIT"]
@@ -46,20 +48,20 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.1.3"])
+      s.add_development_dependency(%q<bundler>, [">= 1.1.3"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
-      s.add_dependency(%q<bundler>, ["~> 1.1.3"])
+      s.add_dependency(%q<bundler>, [">= 1.1.3"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
-    s.add_dependency(%q<bundler>, ["~> 1.1.3"])
+    s.add_dependency(%q<bundler>, [">= 1.1.3"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
     s.add_dependency(%q<rcov>, [">= 0"])
   end
