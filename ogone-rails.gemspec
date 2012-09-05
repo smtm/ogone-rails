@@ -33,8 +33,8 @@ Gem::Specification.new do |s|
     "ogone-rails.gemspec",
     "test/helper.rb",
     "test/test_ogone-rails.rb",
-    "config/locales/de.yml",
-    "config/locales/en.yml"
+    "lib/locales/de.yml",
+    "lib/locales/en.yml"
   ]
   s.homepage = "http://github.com/robinhoudmeyers/ogone-rails"
   s.licenses = ["MIT"]
