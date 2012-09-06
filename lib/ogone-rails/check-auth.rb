@@ -2,8 +2,12 @@ module OgoneRails
   
   class CheckAuth 
     
-    def initialize request
-      @request = request.GET
+    def initialize request, method = "GET"
+      if method == "POST"
+        @request = request.POST
+      else
+        @request = request.GET
+      end
       @params = {}
       get_params
     end
