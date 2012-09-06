@@ -167,7 +167,7 @@ module OgoneRails
 
     
       def get_form
-        @form << "\t<input type='submit' value='#{I18n.t(:"ogone.submit")}' id='submit2' name='submit2'>\n"
+        @form << "\t<button type='submit' class='btn btn-primary btn-large' id='submit2' name='submit2'>#{I18n.t(:"ogone.submit")}</button>\n"
         @form << "</form>"
         @form.html_safe
       end
