@@ -2,11 +2,11 @@ module OgoneRails
   
   class CheckAuth 
     
-    def initialize request, method = "GET"
-      if method == "POST"
-        @request = request.POST
-      else
+    def initialize request, method = "POST"
+      if method == "GET"
         @request = request.GET
+      else
+        @request = request.POST
       end
       @params = {}
       get_params
@@ -30,7 +30,7 @@ module OgoneRails
       
       # Digest sha_out_phrase
       sha_check = Digest::SHA1.hexdigest(sha_out_phrase).upcase
-    
+
       # Compare sha_sign with digested phrase
       if sha_check == sha_sign
         return true
