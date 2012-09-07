@@ -16,7 +16,7 @@ module OgoneRails
         @sha_in_phrase << "#{key.upcase}=#{value}#{OgoneRails::sha_in}"
       end
       
-      Digest::SHA1.hexdigest(@sha_in_phrase).upcase
+      Digest::SHA512.hexdigest(@sha_in_phrase).upcase
     end
     
     def generate_sha_out

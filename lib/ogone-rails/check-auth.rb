@@ -29,7 +29,7 @@ module OgoneRails
       end      
       
       # Digest sha_out_phrase
-      sha_check = Digest::SHA1.hexdigest(sha_out_phrase).upcase
+      sha_check = Digest::SHA512.hexdigest(sha_out_phrase).upcase
 
       # Compare sha_sign with digested phrase
       if sha_check == sha_sign
