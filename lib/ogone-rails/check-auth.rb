@@ -20,7 +20,7 @@ module OgoneRails
       
       # Upcase and sort paramaters to params
       @request.each do |key, value|
-        ogone_return[key.upcase] = value unless key == 'SHASIGN' # exclude SHASIGN
+        ogone_return[key.upcase] = value unless key == 'SHASIGN'
       end
 
       # Generate sha_out_hash
@@ -30,6 +30,9 @@ module OgoneRails
       
       # Digest sha_out_phrase
       sha_check = Digest::SHA512.hexdigest(sha_out_phrase).upcase
+      Rails.logger.debug sha_out_phrase
+      Rails.logger.debug sha_check
+      Rails.logger.debug sha_sign
 
       # Compare sha_sign with digested phrase
       if sha_check == sha_sign
