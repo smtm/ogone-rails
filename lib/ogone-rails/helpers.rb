@@ -15,9 +15,6 @@ module OgoneRails
       # pspid
       form.add_input('PSPID', OgoneRails::pspid)
       hash.add_parameter 'PSPID', OgoneRails::pspid
-      # currency
-      form.add_input('currency', OgoneRails::currency)
-      hash.add_parameter 'currency', OgoneRails::currency
       # language
       form.add_input('language', OgoneRails::language)
       hash.add_parameter 'language', OgoneRails::language
