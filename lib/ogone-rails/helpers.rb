@@ -15,12 +15,7 @@ module OgoneRails
       # pspid
       form.add_input('PSPID', OgoneRails::pspid)
       hash.add_parameter 'PSPID', OgoneRails::pspid
-      # language
-      form.add_input('language', OgoneRails::language)
-      hash.add_parameter 'language', OgoneRails::language
-      
-      
-      
+    
       # OPTIONAL VALUES
       options.each do |option, value|
         case option
