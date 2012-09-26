@@ -1,9 +1,9 @@
-#Ogone for Rails
+#Viveum-Ogone for Rails
 
 
 ##What is it
 
-A Ruby gem to simplify the use of [Ogone](http://www.ogone.com) online payments service.
+A Ruby gem to simplify the use of [Ogone](http://www.ogone.com) online payments service as offered by Viveum.
 
 
 ##Usage

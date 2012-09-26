@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Robin Houdmeyers"]
+  s.authors = ["Roland Oth"]
   s.date = %q{2012-09-26}
   s.description = %q{Add Ogone payments functionality to your Rails application}
-  s.email = %q{houdmeyers@gmail.com}
+  s.email = %q{roland.oth@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"

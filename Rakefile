@@ -19,8 +19,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = "Ogone usable in Rails"
   gem.description = "Add Ogone payments functionality to your Rails application"
-  gem.email = "houdmeyers@gmail.com"
-  gem.authors = ["Robin Houdmeyers"]
+  gem.email = "roland.oth@gmail.com"
+  gem.authors = ["Roland Oth"]
   # dependencies defined in Gemfile
   
   gem.files.include 'lib/**/*'
