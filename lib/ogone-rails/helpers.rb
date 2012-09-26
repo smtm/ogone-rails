@@ -37,6 +37,10 @@ module OgoneRails
         when :customer_name
           form.add_input('CN', value)
           hash.add_parameter 'CN', value
+
+        when :currency
+          form.add_input('currency', value)
+          hash.add_parameter 'currency', value
           
         when :customer_email
           form.add_input('EMAIL', value)
