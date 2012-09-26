@@ -49,6 +49,10 @@ module OgoneRails
         when :customer_address
           form.add_input('owneraddress', value)
           hash.add_parameter 'owneraddress', value
+
+        when :language
+          form.add_input('LANGUAGE', value)
+          hash.add_parameter 'LANGUAGE', value
           
         when :customer_zip
           form.add_input('ownerZIP', value)
