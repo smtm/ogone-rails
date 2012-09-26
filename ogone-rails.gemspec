@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "ogone-rails"
-  s.version = "0.0.4"
+  s.name = %q{ogone-rails}
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Robin Houdmeyers"]
-  s.date = "2012-05-15"
-  s.description = "Add Ogone payments functionality to your Rails application"
-  s.email = "houdmeyers@gmail.com"
+  s.date = %q{2012-09-26}
+  s.description = %q{Add Ogone payments functionality to your Rails application}
+  s.email = %q{houdmeyers@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -34,13 +34,14 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_ogone-rails.rb"
   ]
-  s.homepage = "http://github.com/robinhoudmeyers/ogone-rails"
+  s.homepage = %q{http://github.com/robinhoudmeyers/ogone-rails}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.17"
-  s.summary = "Ogone usable in Rails"
+  s.rubygems_version = %q{1.3.7}
+  s.summary = %q{Ogone usable in Rails}
 
   if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then

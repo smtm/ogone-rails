@@ -6,6 +6,8 @@ coverage.data
 # rdoc generated
 rdoc
 
+.rvmrc
+
 # yard generated
 doc
 .yardoc
