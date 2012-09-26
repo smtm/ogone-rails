@@ -25,8 +25,8 @@ module OgoneRails
         # General parameters
         
         when :order_id
-          form.add_input('orderID', value)
-          hash.add_parameter 'orderID', value
+          form.add_input('ORDERID', value)
+          hash.add_parameter 'ORDERID', value
           
         when :amount
           #amount 15.00 -> 1500
