@@ -1,8 +1,12 @@
 module OgoneRails
   extend self
   
-  TEST_SERVICE_URL = 'https://viveum.v-psp.com/ncol/test/orderstandard_utf8.asp'
-  LIVE_SERVICE_URL = 'https://viveum.v-psp.com/ncol/prod/orderstandard_utf8.asp'
+  TEST_SERVICE_URL = 'https://viveum.v-psp.com/ncol/test/orderstandard_UTF8.asp'
+  #TEST_SERVICE_URL = 'https://viveum.v-psp.com/ncol/test/orderstandard.asp'
+  
+  LIVE_SERVICE_URL = 'https://viveum.v-psp.com/ncol/prod/orderstandard_UTF8.asp'
+  #LIVE_SERVICE_URL = 'https://viveum.v-psp.com/ncol/prod/orderstandard.asp'
+
   STATUS_CODES = {
     0   => "Incomplete or invalid",
     1	  => "Cancelled by client",
@@ -48,7 +52,7 @@ module OgoneRails
   @sha_in   = nil
   @sha_out  = nil
   @currency = "EUR"
-  @language = "nl_NL"
+  @language = "de_DE"
   @mode    = "live"
   
   def config c = {}
