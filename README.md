@@ -16,7 +16,7 @@ A Ruby gem to simplify the use of [Ogone](http://www.ogone.com) online payments 
 		
 		rails generate ogone:config
 		
-This creates 2 files. Change te example configruation in **ogone.yml** to your own configuration.
+This creates 2 files. Change the example configruation in **ogone.yml** to your own configuration.
 
 
 	
