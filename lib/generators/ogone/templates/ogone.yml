@@ -1,0 +1,23 @@
+development:
+  pspid: "example"
+  sha_in: "0123456789abcdefghijklmnopqrstuv"
+  sha_out: "vutsrqponmlkjihgfedcba9876543210"
+  currency: "EUR"
+  language: "nl_NL"
+  mode: 'test'
+  
+test:
+  pspid: "example"
+  sha_in: "0123456789abcdefghijklmnopqrstuv"
+  sha_out: "vutsrqponmlkjihgfedcba9876543210"
+  currency: "EUR"
+  language: "nl_NL"
+  mode: 'test'
+  
+production:
+  pspid: "example"
+  sha_in: "0123456789abcdefghijklmnopqrstuv"
+  sha_out: "vutsrqponmlkjihgfedcba9876543210"
+  currency: "EUR"
+  language: "nl_NL"
+  mode: 'live'

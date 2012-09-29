@@ -55,7 +55,7 @@ module OgoneRails
   @language = "de_DE"
   @mode    = "live"
   
-  def config c = {}
+  def config c
     
     c.each do |key, value|
       case key
@@ -66,11 +66,11 @@ module OgoneRails
       when :sha_out
         @sha_out = value
       when :currency
-        @currency = value
+        @currency = value unless value.nil?
       when :language
-        @language = value
+        @language = value unless value.nil?
       when :mode
-        @mode = value
+        @mode = value unless value.nil?
       end
     end
   end
